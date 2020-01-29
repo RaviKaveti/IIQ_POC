@@ -1,7 +1,0 @@
-[RemoteTestNG] detected TestNG version 6.12.0
-Starting ChromeDriver 78.0.3904.105 (60e2d8774a8151efa6a00b1f358371b1e0e07ee2-refs/branch-heads/3904@{#877}) on port 15071
-Only local connections are allowed.
-Please protect ports used by ChromeDriver and related test frameworks to prevent access by malicious code.
-[1580286749.385][WARNING]: This version of ChromeDriver has not been tested with Chrome version 79.
-Jan 29, 2020 2:02:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
-INFO: Detected dialect: W3C
