@@ -1,0 +1,492 @@
+@And("^click on Required Roles tab$")
+	public void clickOnRequiredRolesTab() throws Throwable {
+
+		boolean flag = false;
+		WebElement webreqroletext,webreqroletext2;
+		String strreqrole1,strreqrole2;
+		int row=0;
+		WebElement currroletext;
+		int j=1;
+		int p=1;
+		int m=0;
+		WebElement webreqrole = driver.findElement(By.xpath("//div[@id='requiredRolesSectionPanel']"));
+		driver.findElement(By.xpath("//span[text()='Required Roles']/../../div/img")).click();
+
+		/*while(m<nextpage.size())
+		{
+			//for(int k=0;k<nextpage.size();k++)
+
+			System.out.println("next pages ");
+		 */			
+		List<WebElement> listreqrole = webreqrole.findElements(By.tagName("td"));
+		//while(m<listreqrole.size())
+		/*for(int o=0;o<listreqrole.size();o++)
+		{*/
+		try
+		{
+
+
+			//System.out.println(listreqrole.size());
+			Iterator<WebElement> itrreqrole = listreqrole.iterator();
+			while(itrreqrole.hasNext())
+				//while(true)
+			{
+				webreqroletext = itrreqrole.next();
+				WebElement cc;
+				while(j<16)
+				{
+
+					if(webreqroletext == null)
+					{
+						System.out.println("hi1");
+						break;
+					}
+					if(webreqroletext != null)
+					{
+						strreqrole1 = webreqroletext.getText();
+						System.out.println("required role :"+strreqrole1);
+						System.out.println("j :"+j);
+
+						webreqroletext = itrreqrole.next();
+						webreqroletext = itrreqrole.next();
+						webreqroletext = itrreqrole.next();
+						//row++;
+						j++;
+
+						System.out.println("hi2");
+					}
+				}
+				//	if(j==16)
+				//{
+				//System.out.println("hi3");
+
+				//j=1;
+			}
+
+
+
+
+			//j++;
+			//row=0;
+			//}
+		}
+		//j=0;
+		//}
+		/*if(j==15)
+					{
+						driver.findElement(By.xpath("//div[@id='button-1224']")).click();
+						//j++;
+						//row=0;
+					}*/
+		//flag = true;
+		//j=0;
+
+		//j=0;
+		//j++;
+		/*if(flag==true)
+					{
+						break;
+		 */
+		//j=j+2;
+
+
+
+		//}
+
+		//}
+
+
+		catch(Exception e)
+		{
+			System.out.println(e.getStackTrace());
+		}
+
+		boolean fl = false;
+		WebElement nextpag = driver.findElement(By.xpath("//div[@id='button-1224']"));
+		if(nextpag == null)
+		{
+			System.out.println("hi4");
+			
+		}
+
+		if(nextpag != null) 
+		{					
+			System.out.println("hi5");
+			nextpag.click();
+			fl=true;
+			//j=1;
+			//break;
+		}
+		if(fl==true)
+		{
+			System.out.println("hi6");
+			WebElement webreqrole1 = driver.findElement(By.xpath("//div[@id='requiredRolesSectionPanel']"));
+			WebElement wiem = driver.findElement(By.xpath("//*[contains(text(),'Required Roles')]"));
+			if(wiem.isDisplayed())
+			{
+				System.out.println("testdsfdlk");
+			wiem.click();
+			System.out.println("ddddd");
+			//wiem.click();
+			//wiem.click();
+			}
+			Thread.sleep(5000);
+			List<WebElement> listreqrole2 = webreqrole1.findElements(By.tagName("td"));
+			//while(m<listreqrole.size())
+			/*for(int o=0;o<listreqrole.size();o++)
+				{*/
+			try
+			{
+				System.out.println("ggggtestdsfdlk");
+
+				//System.out.println(listreqrole.size());
+				Iterator<WebElement> itrreqrole2 = listreqrole2.iterator();
+				while(itrreqrole2.hasNext())
+					//while(true)
+				{
+					System.out.println("hhhhhh");
+					webreqroletext2 = itrreqrole2.next();
+					WebElement cc;
+					while(p<16)
+					{
+						System.out.println("lllll");
+						if(webreqroletext2 == null)
+						{
+							System.out.println("hi1");
+							break;
+						}
+						if(webreqroletext2 != null)
+						{
+							strreqrole2 = webreqroletext2.getText();
+							System.out.println("required role2222 :"+strreqrole2);
+							System.out.println("j :"+j);
+
+							webreqroletext2 = itrreqrole2.next();
+							webreqroletext2 = itrreqrole2.next();
+							webreqroletext2 = itrreqrole2.next();
+							//row++;
+							p++;
+
+							System.out.println("hi2");
+						}
+					}
+					//	if(j==16)
+					//{
+					//System.out.println("hi3");
+
+					//j=1;
+				}
+
+
+
+
+				//j++;
+				//row=0;
+				//}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+		}
+	}
+	
+
+		}
+		//m++;
+	
+	/*if(strreqrole1.contains("ABN AU Branch Manager LOCAM"))
+		{
+			System.out.println("test..");
+		}
+	 */
+	/*Iterator<WebElement> itrreqrole = listreqrole.iterator();
+			while (itrreqrole.hasNext()) 
+			{
+
+
+				WebElement webreqroletext = itrreqrole.next();
+				String strreqrole = webreqroletext.getText();
+				//System.out.println("strreqrole :"+strreqrole);
+
+				WebElement currroletext;
+
+				int i=0;
+				while(i==0)
+				{*/
+
+	//currroletext = itrreqrole.next();
+
+	/*String strreqrole1 = currroletext.getText();
+					System.out.println("strreqrole1 :"+strreqrole1);
+
+					i++;
+				}
+
+			}
+		}
+	 */
+
+
+
+	/*WebElement webreqrole = driver.findElement(By.xpath("//div[@id='requiredRolesSectionPanel']"));
+		List<WebElement> listreqrole = webreqrole.findElements(By.tagName("div"));
+		Iterator<WebElement> itrreqrole = listreqrole.iterator();
+		while (itrreqrole.hasNext()) 
+		{
+			WebElement webreqroletext = itrreqrole.next();
+			String strreqrole = webreqroletext.getText();
+			System.out.println("strreqrole :"+strreqrole);
+
+			if(strreqrole.equals("Required Roles"))
+			{
+				driver.findElement(By.xpath("//span[text()='Required Roles']/../../div/img")).click();
+
+				//WebElement webdd = driver.findElement(By.xpath("//span[text()='Required Roles']"));
+				List<WebElement> webtritem = driver.findElements(By.tagName("table"));
+				Iterator<WebElement> itrtritem = webtritem.iterator();
+				while(itrtritem.hasNext())
+				{
+					WebElement webtrtext = itrtritem.next();
+					String strtext = webtrtext.getText();
+					System.out.println("strtext :"+strtext);
+					if(strtext!=null)
+					{
+
+						List<WebElement> webdivitem = webtrtext.findElements(By.tagName("span"));
+						Iterator<WebElement> itrdivitem = webdivitem.iterator();
+						while(itrdivitem.hasNext())
+						{
+							WebElement webdivtext = itrdivitem.next();
+							String strdivtext = webdivtext.getText();
+							System.out.println("strdivtext :"+strdivtext);
+							if(strdivtext.equals("Name"))
+								System.out.println("tersdsfdsfd");
+							{
+
+							}
+						}
+						if(strtext.equals("Name"))
+				{
+					WebElement webtdtext = itrtritem.next();
+					System.out.println("strtdtext :"+webtrtext.getText());
+				}
+					}
+				}
+
+				//Iterator<WebElement> itrtritem = webtritem.iterator();
+				for(int i=0;i<webtritem.size();i++)
+					{
+						System.out.println(webtritem);
+					}
+
+				WebElement webtrtext = webtritem.
+					String strtext = webtrtext.getText();
+					System.out.println();
+
+
+				while(itrtritem.hasNext())
+					{
+						WebElement webtrtext = itrtritem.next();
+						String strtrtext = webtrtext.getText();
+						System.out.println("strtrtext " +strtrtext);
+						if(strtrtext.contains("ABN AU Branch Manager RBI Tier2") && strtrtext.contains("IT") &&
+								strtrtext.contains("Branch Manager RBI Tier2")	)
+						{
+							System.out.println("text........");
+							webtrtext.click();
+							break;
+						}
+						break;
+					}
+
+
+				break;
+			}
+		}*/
+
+
+
+
+
+
+
+
+
+
+
+====================
+with arraylist
+
+@And("^click on Required Roles tab$")
+	public void clickOnRequiredRolesTab() throws Throwable 
+	{
+		WebElement wrerolehdr = driver.findElement(By.xpath("//span[text()='Required Roles']/../../div/img"));
+		if(wrerolehdr.isDisplayed())
+		{
+			wrerolehdr.click();
+		}
+		int x=0;
+
+		while(x<3)
+		{
+			reqrolecheck();
+		}
+
+		//driver.navigate().refresh();
+		
+		
+	}
+	@SuppressWarnings({ "unused", "unlikely-arg-type", "null" })
+	public ArrayList<String> reqrolecheck() throws InterruptedException
+	{
+
+		boolean flag = false;
+		boolean ag = false;
+		WebElement webreqroletext = null,webreqroletext2;
+		String strreqrole1 = null;
+		int row=0;
+		WebElement currroletext;
+		int j=1;
+		int p=1;
+		int m=0;
+String abc = null;
+
+		//WebElement wrerolehdr = driver.findElement(By.xpath("//span[text()='Required Roles']/../../div/img"));
+		//WebElement wrerolehdr1 = driver.findElement(By.xpath("//*[contains(text(),'Required Roles')]"));
+		/*if(wrerolehdr.isDisplayed())
+		{
+			//driver.navigate().refresh();
+			wrerolehdr.click();
+		}*/
+		//else 
+		/*if(wrerolehdr1.isDisplayed())
+		{
+			//driver.navigate().refresh();
+			wrerolehdr1.click();
+		}
+		 */
+String temp = null;
+ArrayList<String> arrlist = new ArrayList<String>();
+String[] gh;
+int g=0;
+WebElement nextpage = driver.findElement(By.xpath("//div[@id='button-1224']"));
+		WebElement wreqrolsection = driver.findElement(By.xpath("//div[@id='requiredRolesSectionPanel']"));
+		List<WebElement> listreqrole = wreqrolsection.findElements(By.tagName("td"));
+
+			Iterator<WebElement> itrreqrole = listreqrole.iterator();
+			
+			try
+			{
+			while(itrreqrole.hasNext())
+			{
+				webreqroletext = itrreqrole.next();
+				while(j<16)
+				{
+					if(webreqroletext != null)
+					{
+						strreqrole1 = webreqroletext.getText();
+						if(strreqrole1 == null)
+						{
+							break;
+						}
+						else if(strreqrole1 !=null)
+						{
+							//System.out.println("required role :"+strreqrole1);
+							
+							
+							arrlist.add(strreqrole1);							
+							
+							//System.out.println("j :"+j);
+
+							webreqroletext = itrreqrole.next();
+						
+							if(!webreqroletext.isDisplayed())								
+							{
+								ag = true;
+								System.out.println("eeeeeeeee");
+								break;
+								
+							}
+							else
+							{
+								//System.out.println("ssss");
+								webreqroletext = itrreqrole.next();
+								webreqroletext = itrreqrole.next();
+								
+							}
+							j++;
+							//System.out.println("hi2");
+						}
+						if(!webreqroletext.isDisplayed())								
+						{
+							System.out.println("gggggg");
+							
+							break;
+						}
+						if(!webreqroletext.isDisplayed())								
+						{
+							System.out.println("gggggg1111");
+							break;
+						}
+					}
+					if(!webreqroletext.isDisplayed())								
+					{
+						System.out.println("hhhhh");
+						break;
+					}
+				}
+				
+			}
+			while(g<arrlist.size())
+			{
+			System.out.println("arrlist to str :"+arrlist.get(g).toString());
+			g++;
+			}
+			}
+			
+			catch(NoSuchElementException e1)
+			{
+				System.out.println("element not found..");
+				
+				
+			}
+		
+
+		//WebElement nextpage = driver.findElement(By.xpath("//div[@id='button-1224']"));
+		WebElement wrerolehdr1 = driver.findElement(By.xpath("//span[@id='requiredRolesGridPanel_header_hd-textEl']"));
+		boolean fg = false;
+		
+			Thread.sleep(3000);
+			if(!nextpage.isDisplayed())
+			{
+				System.out.println("hi4");
+				
+
+			}
+
+			else if(nextpage.isDisplayed()) 
+			{					
+				System.out.println("hi5");
+
+				nextpage.click();
+				fg=true;
+				/*if(wrerolehdr1.isDisplayed())
+				{
+					wrerolehdr1.click();
+					fg=true;
+					if(fg==true)
+					{
+						nextpage.click();
+					}
+				}*/
+
+
+				Thread.sleep(3000);
+
+			}
+		
+		return arrlist ;
+
+
+	}
+
